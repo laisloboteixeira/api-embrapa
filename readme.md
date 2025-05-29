@@ -73,7 +73,7 @@ O arquivo `embrapa_scraper.py` busca a URL correta com o parâmetro `ano`, encon
 Este projeto foi criado para fins acadêmicos e de demonstração, e **não está licenciado para uso comercial ou distribuição pública** sem autorização.
 
 ## Integrantes
-    - Joyce Muniz de Oliveira | RM: 364278 | joyce.muniz@hotmail.com
     - Laís Lobo Teixeira | RM: 363124 | laisloboteixeira@gmail.com
+    - Joyce Muniz de Oliveira | RM: 364278 | joyce.muniz@hotmail.com
     - Bruno Oliveira Fermino | RM: 363137 | of.bruno9@hotmail.com
     - Victor Rodrigues Linhati | RM: 363151 | victor_linhati@hotmail.com
