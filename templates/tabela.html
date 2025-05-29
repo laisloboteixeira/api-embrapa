@@ -68,16 +68,25 @@
 
 <body>
   <div class="container py-5">
-    <a href="/" class="btn btn-voltar">⟵ Voltar à Página Principal</a>
     <h1 class="text-center mb-4">{{ titulo }}</h1>
-    <form method="get" action="/{{ tipo }}" class="mb-4 d-flex align-items-center gap-2">
-      <label class="form-label m-0">Ano:</label>
-      <input type="number" name="ano" min="1970" max="2023" value="{{ ano }}" class="form-control"
-        style="max-width:150px;">
 
-      <button class="btn btn-custom">Filtrar por ano</button>
-      <small class="text-muted">(1970–2023)</small>
-    </form>
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+      <!-- Formulário e texto juntos -->
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <form method="get" action="/{{ tipo }}" class="d-flex align-items-center gap-2 m-0">
+          <label class="form-label m-0">Ano:</label>
+          <input type="number" name="ano" min="1970" max="2023" value="{{ ano }}" class="form-control"
+            style="max-width:150px;">
+          <button class="btn btn-custom" style="white-space: nowrap;">Filtrar por ano</button>
+        </form>
+        <span class="text-muted" style="white-space: nowrap;">(1970–2023)</span>
+      </div>
+
+      <!-- Botão Voltar -->
+      <a href="/" class="btn btn-voltar">⟵ Voltar à Página Principal</a>
+    </div>
+
+
 
     {% if tabela %}
     <div class="card p-4">
