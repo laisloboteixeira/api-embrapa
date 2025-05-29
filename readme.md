@@ -27,7 +27,7 @@ tabela.html            # Visualização da tabela com filtro
 
 1. Clone o repositório e acesse a pasta:
 ```bash
-git clone https://github.com/seuusuario/api_embrapa.git
+git clone https://github.com/laisloboteixeira/api-embrapa
 cd api_embrapa
 ```
 
