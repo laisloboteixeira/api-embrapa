@@ -15,6 +15,7 @@
       color: white;
       text-align: center;
     }
+
     td, th { vertical-align: middle !important; }
     .bold-row td:first-child { font-weight: bold; }
     .total-row {
@@ -24,23 +25,26 @@
     }
     .table td, .table th { padding: 0.75rem 1.25rem; }
 
-    .btn-custom {
-    background-color: #000000;
-    color: white;
-    border: 1px solid transparent;
-    }
+   .btn-custom,
+   .btn-voltar {
+   background-color: #000000;
+   color: white;
+   border: 1px solid transparent;
+  }
 
-    .btn-custom:hover {
-    background-color: #ffffff;
-    color: black;
-    border: 1px solid #000000;
-    }
+.btn-custom:hover,
+.btn-voltar:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #000000;
+}
+
 
   </style>
 </head>
 <body>
   <div class="container py-5">
-    <a href="/" class="btn btn-outline-primary btn-back">← Voltar à Página Inicial</a>
+    <a href="/" class="btn btn-voltar">⟵ Voltar à Página Principal</a>
     <h1 class="text-center mb-4">{{ titulo }}</h1>
     <form method="get" action="/{{ tipo }}" class="mb-4 d-flex align-items-center gap-2">
     <label class="form-label m-0">Ano:</label>
